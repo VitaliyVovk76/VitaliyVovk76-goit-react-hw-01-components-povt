@@ -1,0 +1,10 @@
+.transactionHistory {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headItem {
+  padding: 10px;
+  border: 1px solid black;
+}

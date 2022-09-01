@@ -1,0 +1,38 @@
+.list{
+    
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    /* width: 200px; */
+    height: 80px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.item:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.status{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    
+}
+
+.isOnline{
+    composes: status;
+    background-color: green;
+}
+
+.isOfnline{
+    composes: status;
+    background-color: red;
+}
+
+.avatar{
+    margin-right: 10px;
+}
