@@ -14,10 +14,15 @@ export default function Statistics({ title, stats }) {
             style={{ backgroundColor: stat.color }}
           >
             <p className={s.label}>{stat.label}</p>
-            <p class={s.percentage}>{stat.percentage}%</p>
+            <p className={s.percentage}>{stat.percentage}%</p>
           </li>
         ))}
       </ul>
     </section>
   );
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array.isRequired,
+};

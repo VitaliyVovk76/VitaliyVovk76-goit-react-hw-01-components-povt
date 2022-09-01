@@ -10,7 +10,7 @@ export default function FriendListItem({ avatar, name, status }) {
         <span className={s.isOfnline}></span>
       )}
       <img className={s.avatar} src={avatar} alt="User avatar" width="48" />
-      <p class="name">{name}</p>
+      <p className={s.name}>{name}</p>
     </>
   );
 }
